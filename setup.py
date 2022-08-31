@@ -26,14 +26,15 @@ setup(
         "License :: Other/Proprietary License",
         "Operating System :: OS Independent",
     ],
-    packages=["smallteacher"] + [f"smallteacher.{f}" for f in find_packages("smallteacher")],
+    packages=["smallteacher"]
+    + [f"smallteacher.{f}" for f in find_packages("smallteacher")],
     install_requires=[
         # https://github.com/pytorch/pytorch/issues/78362
         "protobuf==3.20.1",
         "tqdm>=4.61.1",
         "torch>=1.11.0",
         "torchvision>=0.12.0",
-        "pytorch-lightning==1.6.1"
+        "pytorch-lightning==1.6.1",
     ],
     python_requires=">=3.8",
     include_package_data=True,
