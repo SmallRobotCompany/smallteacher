@@ -1,0 +1,4 @@
+pytorch-lightning==1.6.1
+torchmetrics
+torchvision
+tqdm

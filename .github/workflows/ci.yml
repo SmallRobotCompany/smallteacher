@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+    tags:
+      - '*'
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  run-tests:
+    name: tests
+    runs-on: ubuntu-latest
+    steps:
+    - name: Clone repo
+      uses: actions/checkout@v2
+    - name: Set up python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: pip install -r requirements.txt -r requirements-dev.txt
+    - name: Run CI
+      run: |
+        python -m black --check --diff .
+        python -m pytest tests
