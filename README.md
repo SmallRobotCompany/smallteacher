@@ -28,3 +28,14 @@ datamodule.add_unlabelled_data(unlabelled_ds)
 ```
 
 An example of this code being applied to a [semi-supervised dataset](https://github.com/SmallRobotCompany/smallssd) is available in the [`smallSSD`](smallSSD) folder.
+
+### Installation
+
+`smallteacher` can be installed with the following command:
+
+```bash
+pip install smallteacher
+```
+
+### License
+`smallteacher` has a [Creative Commons Attribution-NonCommercial 4.0 International](https://github.com/smallrobotcompany/smallteacher/blob/main/LICENSE) license.
