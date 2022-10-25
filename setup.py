@@ -20,7 +20,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/smallrobotcompany/smallteacher",
-    version="0.0.5",
+    version="0.0.1",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: Other/Proprietary License",
