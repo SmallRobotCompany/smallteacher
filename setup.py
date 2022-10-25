@@ -13,7 +13,7 @@ setup(
     name="smallteacher",
     description=(
         "Research codebase for teacher-student based semi-supervised "
-        "object detection in an agricultural setting"
+        "object detection in agricultural settings"
     ),
     author="Gabriel Tseng",
     author_email="gabrieltseng95@gmail.com",
